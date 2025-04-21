@@ -36,7 +36,7 @@ export default function SkillsPage() {
         <div className="border-b-4 border-[#2a2b2c]">
           <h1 className="text-3xl font-bold mb-4">My Technical Skills</h1>
           <p className="text-lg mb-10">
-            Here&apos;s a breakdown of the tools and technologies I'm
+            Here&apos;s a breakdown of the tools and technologies I&apos;m
             comfortable working with. I enjoy working across the stack, from
             building clean UIs to managing back-end logic.
           </p>
