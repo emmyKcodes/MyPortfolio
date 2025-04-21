@@ -43,8 +43,6 @@ const ArticlesPage: React.FC = () => (
         Welcome! Below are some of my latest posts on development, design, and
         best practices. Click any title to read the full article.
       </p>
-
-      {/* Articles List */}
       <div className="space-y-8">
         {articles.map((a, i) => (
           <article

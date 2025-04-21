@@ -76,7 +76,6 @@ export default function HomeLayout() {
               <FaLinkedin className="text-2xl" />
             </Link>
           </div>
-          {/* Button */}
           <button className="bg-[#6F4E37] cursor-pointer text-white px-5 py-2 text-base rounded hover:bg-[#8a6245] mt-6 font-bold flex items-center gap-2">
             <Link
               href="https://api.whatsapp.com/send?phone=2349161336710&text=Hi%20Emmanuel!%20%F0%9F%91%8B%20I%20just%20visited%20your%20portfolio%20and%20I%E2%80%99m%20really%20impressed.%20I%E2%80%99d%20love%20to%20connect%20and%20possibly%20collaborate!%20%F0%9F%9A%80%F0%9F%92%A1"

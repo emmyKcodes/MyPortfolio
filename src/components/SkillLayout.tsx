@@ -96,7 +96,6 @@ export default function SkillsPage() {
           </div>
         </section>
 
-        {/* Resume Button */}
         <div className="mt-12 text-center">
           <a
             href="/Resume.pdf"
