@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -16,13 +15,21 @@ import {
   SiFigma,
   SiFirebase,
 } from "react-icons/si";
+import { ReactElement } from "react";
 
 type SkillProps = {
-  icon: JSX.Element;
+  icon: ReactElement;
   name: string;
 };
 
-export default function SkillsPage({ icon, name }: SkillProps) {
+const Skill: React.FC<SkillProps> = ({ icon, name }) => (
+  <div className="flex items-center gap-3 text-lg">
+    <div className="text-3xl">{icon}</div>
+    <span>{name}</span>
+  </div>
+);
+
+export default function SkillsPage() {
   return (
     <div className="min-h-screen px-6 py-12 bg-transparent text-white">
       <div className="max-w-4xl mx-auto">
@@ -117,10 +124,3 @@ export default function SkillsPage({ icon, name }: SkillProps) {
     </div>
   );
 }
-
-const Skill: React.FC<SkillProps> = ({ icon, name }) => (
-  <div className="flex items-center gap-3 text-lg">
-    <div className="text-3xl">{icon}</div>
-    <span>{name}</span>
-  </div>
-);
