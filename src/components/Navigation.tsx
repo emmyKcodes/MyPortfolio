@@ -1,0 +1,98 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { FiHome, FiFileText, FiTool } from "react-icons/fi";
+import { FaBriefcase } from "react-icons/fa";
+import { MdMessage } from "react-icons/md";
+
+const Links = [
+  {
+    name: "HOME",
+    link: "/",
+    icon: (
+      <div className="group relative h-10 w-10 sm:w-5 sm:h-5 md:w-12 md:h-12 lg:w-12 lg:h-12 overflow-hidden rounded flex items-center justify-center transition-all duration-300">
+        <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#6F4E37] transition-all duration-500 group-hover:w-full" />
+        <FiHome className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-white transition duration-300" />
+      </div>
+    ),
+  },
+  {
+    name: "Article",
+    link: "/article",
+    icon: (
+      <div className="group relative h-10 w-10 sm:w-5 sm:h-5 md:w-10 md:h-10 lg:w-12 lg:h-12 overflow-hidden rounded flex items-center justify-center transition-all duration-300">
+        <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#6F4E37] transition-all duration-500 group-hover:w-full" />
+        <FiFileText className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-white transition duration-300" />
+      </div>
+    ),
+  },
+  {
+    name: "Projects",
+    link: "/projects",
+    icon: (
+      <div className="group relative h-10 w-10 sm:w-5 sm:h-5 md:w-10 md:h-10 lg:w-12 lg:h-12 overflow-hidden rounded flex items-center justify-center transition-all duration-300">
+        <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#6F4E37] transition-all duration-500 group-hover:w-full" />
+        <FaBriefcase className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-white transition duration-300" />
+      </div>
+    ),
+  },
+  {
+    name: "Skills",
+    link: "/skills",
+    icon: (
+      <div className="group relative h-10 w-10 sm:w-5 sm:h-5 md:w-9 md:h-9 lg:w-10 lg:h-10 overflow-hidden rounded flex items-center justify-center transition-all duration-300">
+        <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#6F4E37] transition-all duration-500 group-hover:w-full" />
+        <FiTool className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-[white] transition duration-300" />
+      </div>
+    ),
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+    icon: (
+      <div className="group relative h-10 w-10 sm:w-5 sm:h-5 md:w-10 md:h-10 lg:w-12 lg:h-12 overflow-hidden rounded flex items-center justify-center transition-all duration-300">
+        <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#6F4E37] transition-all duration-500 group-hover:w-full" />
+        <MdMessage className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-[white] transition duration-300" />
+      </div>
+    ),
+  },
+];
+
+export default function Navigation() {
+  return (
+    <header className="shadow-md w-full sticky top-0 left-0 z-50">
+      <nav className="flex items-center justify-between p-4 bg-transparent backdrop-blur-sm">
+        <div className="w-70 cursor-pointer hidden md:block">
+          <Image
+            className="w-full h-full object-cover rounded"
+            src="/img/DTD main full logo on no bg v1@4x.png"
+            width={150}
+            height={100}
+            alt="Logo"
+          />
+        </div>
+
+        <div className="flex-1">
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-4 md:gap-4 lg:gap-3">
+            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-4 md:gap-8 lg:gap-16">
+              {Links.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.link}
+                  className="group transition duration-300"
+                >
+                  <div className="flex flex-col items-center justify-center bg-transparent  transition duration-300">
+                    {item.icon}
+                  </div>
+                  <span className="text-transparent group-hover:text-white text-sm mt-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                    {item.name}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+}

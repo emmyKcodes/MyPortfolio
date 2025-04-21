@@ -1,4 +1,4 @@
-import HomeLayout from "@/components/HomeLayout";
+import ContactLayout from "@/components/ContactLayout";
 import Navigation from "@/components/Navigation";
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
       <div className="relative z-10">
         <Navigation />
         <main className="p-0 md:p-3">
-          <HomeLayout />
+          <ContactLayout />
         </main>
       </div>
       <footer className="bg-[#2a2b2c] text-gray-400 text-sm py-6 text-center mt-20 rounded-t-2xl shadow-inner">
