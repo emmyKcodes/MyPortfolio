@@ -17,16 +17,21 @@ import {
   SiFirebase,
 } from "react-icons/si";
 
-export default function SkillsPage() {
+type SkillProps = {
+  icon: JSX.Element;
+  name: string;
+};
+
+export default function SkillsPage({ icon, name }: SkillProps) {
   return (
     <div className="min-h-screen px-6 py-12 bg-transparent text-white">
       <div className="max-w-4xl mx-auto">
         <div className="border-b-4 border-[#2a2b2c]">
           <h1 className="text-3xl font-bold mb-4">My Technical Skills</h1>
           <p className="text-lg mb-10">
-            Here's a breakdown of the tools and technologies I'm comfortable
-            working with. I enjoy working across the stack, from building clean
-            UIs to managing back-end logic.
+            Here&apos;s a breakdown of the tools and technologies I'm
+            comfortable working with. I enjoy working across the stack, from
+            building clean UIs to managing back-end logic.
           </p>
         </div>
 
@@ -112,11 +117,6 @@ export default function SkillsPage() {
     </div>
   );
 }
-
-type SkillProps = {
-  icon: TSX.Element;
-  name: string;
-};
 
 const Skill: React.FC<SkillProps> = ({ icon, name }) => (
   <div className="flex items-center gap-3 text-lg">

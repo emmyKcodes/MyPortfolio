@@ -81,7 +81,7 @@ export default function HomeLayout() {
               href="https://api.whatsapp.com/send?phone=2349161336710&text=Hi%20Emmanuel!%20%F0%9F%91%8B%20I%20just%20visited%20your%20portfolio%20and%20I%E2%80%99m%20really%20impressed.%20I%E2%80%99d%20love%20to%20connect%20and%20possibly%20collaborate!%20%F0%9F%9A%80%F0%9F%92%A1"
               target="blank"
             >
-              Let's Talk
+              Let&apos;s Talk
             </Link>
             <FaWhatsapp className="text-lg text-white" />
           </button>
@@ -100,7 +100,7 @@ export default function HomeLayout() {
 
           <div className="flex flex-wrap gap-6 justify-center ">
             <button className="bg-transparent border border-[#6F4E37] cursor-pointer text-[#6F4E37] px-8 py-4 text-lg font-semibold rounded hover:bg-[#6F4E37] hover:text-white transition-all">
-              <Link href="/contact">Let's Talk</Link>
+              <Link href="/contact">Let&apos;s Talk</Link>
             </button>
 
             <button

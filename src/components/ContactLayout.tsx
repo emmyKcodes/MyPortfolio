@@ -34,7 +34,7 @@ export default function ContactForm() {
       } else {
         toast.error("Something went wrong.");
       }
-    } catch (error) {
+    } catch {
       toast.error("Error sending message.");
     } finally {
       setLoading(false);
@@ -44,7 +44,8 @@ export default function ContactForm() {
   return (
     <div className="text-center ">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight p-8">
-        Let's create something <span className="text-[#6F4E37]">Amazing</span>
+        Let&apos;s create something{" "}
+        <span className="text-[#6F4E37]">Amazing</span>
       </h1>
 
       <form
