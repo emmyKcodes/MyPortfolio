@@ -148,3 +148,8 @@
     animation: fadeIn 1s ease-out forwards;
   }
 }
+
+
+.font-josefin {
+  font-family: "Josefin Sans" !important;
+}

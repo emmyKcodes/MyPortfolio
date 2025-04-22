@@ -25,7 +25,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        josefin: ["var(--font-josefin)"],
+        josefin: ["var(--font-josefin)", "sans-serif"],
       },
       animation: {
         fadeIn: "fadeIn 1s ease-out forwards",
@@ -34,4 +34,5 @@ module.exports = {
     },
   },
   plugins: [],
+  preflight: true,
 };
