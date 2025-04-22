@@ -8,7 +8,7 @@ import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 const Links = [
   {
-    name: "HOME",
+    name: "Home",
     link: "/",
     icon: (
       <div className="group relative h-10 w-10 sm:w-5 sm:h-5 md:w-12 md:h-12 lg:w-12 lg:h-12 overflow-hidden rounded flex items-center justify-center transition-all duration-300">
