@@ -66,7 +66,7 @@ export default function Navigation() {
         <div className="w-70 cursor-pointer hidden md:block">
           <Image
             className="w-full h-full object-cover rounded"
-            src="/img/DTD main full logo on no bg v1@4x.png"
+            src="/img/DTD main full logo on blk no bg v1@4x.png"
             width={150}
             height={100}
             alt="Logo"
@@ -85,7 +85,7 @@ export default function Navigation() {
                   <div className="flex flex-col items-center justify-center bg-transparent  transition duration-300">
                     {item.icon}
                   </div>
-                  <span className="text-white text-xs sm:text-transparent sm:group-hover:text-white mt-2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300">
+                  <span className="text-white text-xs sm:text-transparent md:group-hover:text-white mt-2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300">
                     {item.name}
                   </span>
                 </Link>

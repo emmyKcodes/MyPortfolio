@@ -1,4 +1,5 @@
 "use client";
+import { FiExternalLink } from "react-icons/fi";
 
 import Image from "next/image";
 
@@ -57,7 +58,7 @@ export default function Projects() {
               className="block w-full h-full "
               target="_blank"
             >
-              <div className="relative w-full h-[70%] overflow-hidden">
+              <div className="relative w-full h-[60%] overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -68,7 +69,8 @@ export default function Projects() {
               </div>
 
               <div className="bg-[#2a2b2c] text-white p-4 h-[30%] flex flex-col justify-center items-center">
-                <h3 className="text-xl font-semibold mb-2 text-white transition-colors duration-300 group-hover:text-[#4B3621] text-center">
+                <h3 className="text-xl font-semibold mb-2  text-white transition-colors duration-300 group-hover:text-[#4B3621] text-center">
+                  <FiExternalLink className="inline-block transition-colors duration-300 group-hover:text-[#4B3621] w-4 h-4 mr-2" />
                   {project.title}
                 </h3>
                 <p className="text-white text-center">{project.description}</p>
