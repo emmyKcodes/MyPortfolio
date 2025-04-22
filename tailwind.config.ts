@@ -24,6 +24,9 @@ module.exports = {
           },
         },
       },
+      fontFamily: {
+        josefin: ["var(--font-josefin)"],
+      },
       animation: {
         fadeIn: "fadeIn 1s ease-out forwards",
         shine: "shine 2s infinite linear",

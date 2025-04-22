@@ -31,7 +31,7 @@ const Skill: React.FC<SkillProps> = ({ icon, name }) => (
 
 export default function SkillsPage() {
   return (
-    <div className="min-h-screen px-6 py-12 bg-transparent text-white">
+    <div className="min-h-screen px-6 py-12 bg-transparent text-white ">
       <div className="max-w-4xl mx-auto">
         <div className="border-b-4 border-[#2a2b2c]">
           <h1 className="text-3xl font-bold mb-4">My Technical Skills</h1>
@@ -108,7 +108,7 @@ export default function SkillsPage() {
           </div>
         </section>
 
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <a
             href="/Resume.pdf"
             target="_blank"
@@ -119,7 +119,7 @@ export default function SkillsPage() {
               Check my Resume
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

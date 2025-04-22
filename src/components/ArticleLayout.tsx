@@ -60,7 +60,7 @@ const ArticlesPage: React.FC = () => (
               )}
             </header>
             {a.description && (
-              <p className="mt-3 text-gray-900">{a.description}</p>
+              <p className="mt-3 text-white">{a.description}</p>
             )}
             <div className="mt-4">
               <a

@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FiHome, FiFileText, FiTool } from "react-icons/fi";
-import { FaBriefcase } from "react-icons/fa";
-import { MdMessage } from "react-icons/md";
+import { FiHome, FiTool } from "react-icons/fi";
+import { RiArticleLine } from "react-icons/ri";
+import { VscFolderLibrary } from "react-icons/vsc";
+import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 const Links = [
   {
@@ -22,7 +23,7 @@ const Links = [
     icon: (
       <div className="group relative h-10 w-10 sm:w-5 sm:h-5 md:w-10 md:h-10 lg:w-12 lg:h-12 overflow-hidden rounded flex items-center justify-center transition-all duration-300">
         <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#6F4E37] transition-all duration-500 group-hover:w-full" />
-        <FiFileText className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-white transition duration-300" />
+        <RiArticleLine className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-white transition duration-300" />
       </div>
     ),
   },
@@ -32,7 +33,7 @@ const Links = [
     icon: (
       <div className="group relative h-10 w-10 sm:w-5 sm:h-5 md:w-10 md:h-10 lg:w-12 lg:h-12 overflow-hidden rounded flex items-center justify-center transition-all duration-300">
         <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#6F4E37] transition-all duration-500 group-hover:w-full" />
-        <FaBriefcase className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-white transition duration-300" />
+        <VscFolderLibrary className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-white transition duration-300" />
       </div>
     ),
   },
@@ -42,7 +43,7 @@ const Links = [
     icon: (
       <div className="group relative h-10 w-10 sm:w-5 sm:h-5 md:w-9 md:h-9 lg:w-10 lg:h-10 overflow-hidden rounded flex items-center justify-center transition-all duration-300">
         <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#6F4E37] transition-all duration-500 group-hover:w-full" />
-        <FiTool className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-[white] transition duration-300" />
+        <FiTool className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-white transition duration-300" />
       </div>
     ),
   },
@@ -52,7 +53,7 @@ const Links = [
     icon: (
       <div className="group relative h-10 w-10 sm:w-5 sm:h-5 md:w-10 md:h-10 lg:w-12 lg:h-12 overflow-hidden rounded flex items-center justify-center transition-all duration-300">
         <span className="absolute bottom-0 left-0 top-0 z-0 h-full w-0 bg-[#6F4E37] transition-all duration-500 group-hover:w-full" />
-        <MdMessage className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-[white] transition duration-300" />
+        <IoChatbubbleEllipsesOutline className="relative z-10 w-5 h-5 text-[#6F4E37] group-hover:text-white transition duration-300" />
       </div>
     ),
   },
@@ -61,7 +62,7 @@ const Links = [
 export default function Navigation() {
   return (
     <header className="shadow-md w-full sticky top-0 left-0 z-50">
-      <nav className="flex items-center justify-between p-4 bg-transparent backdrop-blur-sm">
+      <nav className="flex items-center justify-between p-4 bg-transparent backdrop-blur-sm ">
         <div className="w-70 cursor-pointer hidden md:block">
           <Image
             className="w-full h-full object-cover rounded"
@@ -73,7 +74,7 @@ export default function Navigation() {
         </div>
 
         <div className="flex-1">
-          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-4 md:gap-4 lg:gap-3">
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-4 md:gap-4 lg:gap-3  ">
             <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-4 md:gap-8 lg:gap-16">
               {Links.map((item) => (
                 <Link
@@ -84,7 +85,7 @@ export default function Navigation() {
                   <div className="flex flex-col items-center justify-center bg-transparent  transition duration-300">
                     {item.icon}
                   </div>
-                  <span className="text-transparent group-hover:text-white text-sm mt-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                  <span className="text-white text-xs sm:text-transparent sm:group-hover:text-white mt-2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300">
                     {item.name}
                   </span>
                 </Link>

@@ -1,9 +1,13 @@
 import HomeLayout from "@/components/HomeLayout";
+import ArticleLayout from "@/components/ArticleLayout";
 import Navigation from "@/components/Navigation";
+import ProjectLayout from "@/components/ProjectLayout";
+import SkillLayout from "@/components/SkillLayout";
+import ContactLayout from "@/components/ContactLayout";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-black text-white">
+    <div className="relative min-h-screen bg-black text-white font-josefin">
       <div
         className="noise-bg fixed inset-0 w-full h-full z-0 pointer-events-none"
         aria-hidden="true"
@@ -30,6 +34,10 @@ export default function Home() {
         <Navigation />
         <main className="p-0 md:p-3">
           <HomeLayout />
+          <ArticleLayout />
+          <ProjectLayout />
+          <SkillLayout />
+          <ContactLayout />
         </main>
       </div>
       <footer className="bg-[#2a2b2c] text-gray-400 text-sm py-6 text-center mt-20 rounded-t-2xl shadow-inner">

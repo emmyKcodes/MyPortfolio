@@ -32,7 +32,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="Projects" className="p-8 text-center">
+    <section className="p-8 text-center ">
       <div className="border-b-4 border-[#2a2b2c]">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight p-8">
           Recent Projects and{" "}
@@ -61,7 +61,7 @@ export default function Projects() {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-130"
+                  className="w-full h-full object-fill transition-transform duration-500 scale-140 group-hover:scale-180"
                   width={450}
                   height={270}
                 />
