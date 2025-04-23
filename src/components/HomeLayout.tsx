@@ -13,7 +13,7 @@ import {
 export default function HomeLayout() {
   const [text, setText] = useState("");
   const fullText =
-    "Hi, I'm Kehinde Emmanuel Oladapo — a Frontend Engineer with a passion for turning ideas into stunning user experiences. I specialize in React  and love building clean, responsive, and impactful interfaces that users enjoy. When I'm not coding, I enjoy listening to music 🎧 or refining  my design-eye for seamless UI/UX. Let's build something amazing together!😄";
+    "Hi, I'm Kehinde Emmanuel Oladapo,  A Frontend Engineer with a passion for turning ideas into stunning user experiences. I specialize in React  and love building clean, responsive, and impactful interfaces that users enjoy. When I'm not coding, I enjoy listening to music 🎧 or refining  my design-eye for seamless UI/UX. Let's build something amazing together!😄";
 
   useEffect(() => {
     let index = 0;
@@ -21,7 +21,7 @@ export default function HomeLayout() {
       setText(fullText.slice(0, index));
       index++;
       if (index > fullText.length) clearInterval(typingInterval);
-    }, 50);
+    }, 20);
     return () => clearInterval(typingInterval);
   }, []);
 
