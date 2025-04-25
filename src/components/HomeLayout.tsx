@@ -42,7 +42,7 @@ export default function HomeLayout() {
             </div>
           </div>
 
-          <p className="text-center text-gray-600 text-lg font-bold mb-4 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+          <p className="text-center text-white text-lg font-bold mb-4 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
             Kehinde Emmanuel Oladapo
           </p>
           <div className="flex justify-center gap-4 mt-6">
@@ -50,33 +50,33 @@ export default function HomeLayout() {
               href="https://github.com/emmyKcodes"
               target="
               _blank"
-              className="text-white hover:text-[#8a6245] transition duration-200"
+              className="text-white hover:text-[#C19A6B] transition duration-200"
             >
               <FaGithub className="text-2xl" />
             </Link>
             <Link
               href="https://www.instagram.com/ekehinde12345/"
               target="_blank"
-              className="text-white hover:text-[#8a6245] transition duration-200"
+              className="text-white hover:text-[#C19A6B] transition duration-200"
             >
               <FaInstagram className="text-2xl" />
             </Link>
             <Link
               href="https://x.com/k_k39777886"
               target="_blank"
-              className="text-white hover:text-[#8a6245] transition duration-200"
+              className="text-white hover:text-[#C19A6B] transition duration-200"
             >
               <FaTwitter className="text-2xl" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/emmanuel-kehinde-9b6438266/"
               target="_blank"
-              className="text-white hover:text-[#8a6245] transition duration-200"
+              className="text-white hover:text-[#C19A6B] transition duration-200"
             >
               <FaLinkedin className="text-2xl" />
             </Link>
           </div>
-          <button className="bg-[#6F4E37] cursor-pointer text-white px-5 py-2 text-base rounded hover:bg-[#8a6245] mt-6 font-bold flex items-center gap-2">
+          <button className="bg-[#C19A6B] cursor-pointer text-white px-5 py-2 text-base rounded hover:bg-[#C19A6B] mt-6 font-bold flex items-center gap-2">
             <Link
               href="https://api.whatsapp.com/send?phone=2349161336710&text=Hi%20Emmanuel!%20%F0%9F%91%8B%20I%20just%20visited%20your%20portfolio%20and%20I%E2%80%99m%20really%20impressed.%20I%E2%80%99d%20love%20to%20connect%20and%20possibly%20collaborate!%20%F0%9F%9A%80%F0%9F%92%A1"
               target="blank"
@@ -94,19 +94,19 @@ export default function HomeLayout() {
             </h2>
           </div>
 
-          <div className="flex gap-6 flex-wrap justify-center text-xl font-bold text-[#6F4E37]">
+          <div className="flex gap-6 flex-wrap justify-center text-xl font-bold text-[#C19A6B]">
             <span className="bg-transparent px-6 py-3 rounded text-lg md:text-xl lg:text-3xl "></span>
           </div>
 
           <div className="flex flex-wrap gap-6 justify-center ">
-            <button className="bg-transparent border border-[#6F4E37] cursor-pointer text-[#6F4E37] px-8 py-4 text-lg font-semibold rounded hover:bg-[#6F4E37] hover:text-white transition-all">
+            <button className="bg-transparent border border-[#C19A6B] cursor-pointer text-[white] px-8 py-4 text-lg font-semibold rounded hover:bg-[#C19A6B] hover:text-white transition-all">
               <Link href="/contact">Let&apos;s Talk</Link>
             </button>
 
             <button
-              className="group relative overflow-hidden border border-gray-400 bg-transparent px-4 py-2 text-lg font-semibold text-[#6F4E37] rounded cursor-pointer transition-all hover:text-white
-                    before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#6F4E37] before:duration-500
-  after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#6F4E37] after:duration-500
+              className="group relative overflow-hidden border border-gray-400 bg-transparent px-4 py-2 text-lg font-semibold text-[white] rounded cursor-pointer transition-all hover:text-white
+                    before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#C19A6B] before:duration-500
+  after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#C19A6B] after:duration-500
     hover:before:h-full hover:after:h-full"
             >
               <span className="relative z-10">

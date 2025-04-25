@@ -11,25 +11,16 @@ module.exports = {
         "custom-gray": "#272829",
       },
       keyframes: {
-        fadeIn: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
-        },
         shine: {
-          "0%": {
-            backgroundPosition: "-100%",
-          },
-          "100%": {
-            backgroundPosition: "100%",
-          },
+          "0%": { backgroundPosition: "-100%" },
+          "100%": { backgroundPosition: "200%" },
+        },
+        animation: {
+          shine: "shine 1.5s ease-out forwards",
         },
       },
       fontFamily: {
         josefin: ["var(--font-josefin)", "sans-serif"],
-      },
-      animation: {
-        fadeIn: "fadeIn 1s ease-out forwards",
-        shine: "shine 2s infinite linear",
       },
     },
   },

@@ -1,3 +1,4 @@
+import ShineOnScroll from "@/components/ShineOnScroll";
 import HomeLayout from "@/components/HomeLayout";
 import ArticleLayout from "@/components/ArticleLayout";
 import Navigation from "@/components/Navigation";
@@ -32,17 +33,27 @@ export default function Home() {
 
       <div className="relative z-10">
         <Navigation />
-        <main className="p-0 md:p-3">
-          <HomeLayout />
-          <ArticleLayout />
-          <ProjectLayout />
-          <SkillLayout />
-          <ContactLayout />
+        <main className="p-0 md:p-3 space-y-24">
+          <ShineOnScroll>
+            <HomeLayout />
+          </ShineOnScroll>
+          <ShineOnScroll>
+            <ArticleLayout />
+          </ShineOnScroll>
+          <ShineOnScroll>
+            <ProjectLayout />
+          </ShineOnScroll>
+          <ShineOnScroll>
+            <SkillLayout />
+          </ShineOnScroll>
+          <ShineOnScroll>
+            <ContactLayout />
+          </ShineOnScroll>
         </main>
       </div>
-      <footer className="bg-[#2a2b2c] text-gray-400 text-sm py-6 text-center mt-20 rounded-t-2xl shadow-inner">
+      <footer className="bg-[#2a2b2c] text-white text-sm py-6 text-center mt-20 rounded-t-2xl shadow-inner">
         <p>&copy; 2025 Kehinde Emmanuel Oladapo. All rights reserved.</p>
-        <p className="mt-1 italic text-gray-500">
+        <p className="mt-1 italic text-white">
           Crafted with love and clean code 💻✨
         </p>
       </footer>

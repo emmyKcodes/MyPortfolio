@@ -43,22 +43,23 @@ export default function ContactForm() {
 
   return (
     <div className="text-center ">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight p-8">
-        Let&apos;s create something{" "}
-        <span className="text-[#6F4E37]">Amazing</span>
+      <h1 className="text-3xl text-white sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight p-8">
+        Let&apos;s create something
+        <span className="text-[#C19A6B]"> Amazing</span>
       </h1>
 
       <form
         onSubmit={handleSubmit}
-        className="space-y-4 max-w-md mx-auto p-4 border rounded-xl shadow"
+        className="space-y-4 max-w-md mx-auto p-4 border rounded-xl "
       >
-        <h2 className="text-xl font-semibold">Contact Me</h2>
+        <h2 className="text-xl font-semibold text-white">Contact Me</h2>
         <Input
           name="name"
           placeholder="Your Name"
           value={formData.name}
           onChange={handleChange}
           required
+          className="text-white"
         />
         <Input
           name="email"
@@ -67,6 +68,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
+          className="text-white"
         />
         <Textarea
           name="message"
@@ -74,11 +76,12 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           required
+          className="text-white"
         />
         <Button
           type="submit"
           disabled={loading}
-          className="bg-[#6F4E37] cursor-pointer text-white px-5 py-2 text-base rounded hover:bg-[#8a6245] mt-6 font-bold"
+          className="bg-[#C19A6B] cursor-pointer text-white px-5 py-2 text-base rounded hover:bg-[#8a6245] mt-6 font-bold"
         >
           {loading ? "Sending..." : "Send Message"}
         </Button>

@@ -56,7 +56,7 @@ const ArticlesPage: React.FC = () => (
                 </a>
               </h2>
               {a.date && (
-                <time className="text-sm text-gray-500">{a.date}</time>
+                <time className="text-sm text-[#ffffffcc]">{a.date}</time>
               )}
             </header>
             {a.description && (
@@ -67,7 +67,7 @@ const ArticlesPage: React.FC = () => (
                 href={a.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block font-medium text-[#a26941] hover:underline"
+                className="inline-block font-medium text-[#C19A6B] hover:underline"
               >
                 Read more &rarr;
               </a>

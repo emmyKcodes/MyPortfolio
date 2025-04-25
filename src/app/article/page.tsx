@@ -32,9 +32,9 @@ export default function Home() {
           <ArticleLayout />
         </main>
       </div>
-      <footer className="bg-[#2a2b2c] text-gray-400 text-sm py-6 text-center mt-20 rounded-t-2xl shadow-inner">
+      <footer className="bg-[#2a2b2c] text-white text-sm py-6 text-center mt-20 rounded-t-2xl shadow-inner">
         <p>&copy; 2025 Kehinde Emmanuel Oladapo. All rights reserved.</p>
-        <p className="mt-1 italic text-gray-500">
+        <p className="mt-1 italic text-white">
           Crafted with love and clean code 💻✨
         </p>
       </footer>
