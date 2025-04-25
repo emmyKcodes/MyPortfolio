@@ -66,7 +66,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white mb-6">
             Recent Projects &<br />
             <span className="text-[#C19A6B]">Achievements</span>
           </h1>

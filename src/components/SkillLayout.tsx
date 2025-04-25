@@ -43,7 +43,7 @@ export default function SkillsPage() {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl text-white font-bold leading-tight mb-6">
             My <span className="text-[#C19A6B]">Technical</span> Stack
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
