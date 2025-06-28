@@ -87,7 +87,7 @@ export default function SkillsPage() {
           className="mt-16 text-center"
         >
           <a
-            href="/Resume- Emmanuel Kehinde.pdfgit"
+            href="/Resume- Emmanuel Kehinde.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-transparent border-2 border-[#C19A6B] text-[#C19A6B] rounded-full font-medium hover:bg-[#C19A6B] hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-[#C19A6B]/30"
